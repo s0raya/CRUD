@@ -1,0 +1,29 @@
+### Obtener todos los usuarios
+GET http://localhost:3000/usuarios
+
+### Obtener el usuario por nombre.
+GET http://localhost:3000/usuarios/Ryu
+
+### Añadir usuarios
+POST http://localhost:3000/usuarios
+Content-type: application/json
+
+{
+    "nombre": "Ken Masters",
+    "edad": 39,
+    "lugarProcedencia": "Estados Unidos"
+}
+
+### Eliminar usuarios
+DELETE http://localhost:3000/usuarios/Dhalsim
+
+### modificar usuario
+PUT http://localhost:3000/usuarios/Blanka
+Content-type: application/json
+
+{
+    "nombre": "Blanka",
+    "edad": 32,
+    "lugarProcedencia": "España"
+}
+    
